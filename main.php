@@ -13,13 +13,13 @@ try {
     // Set a Share Name (e.g., ThermalPrinter).
     // Click OK to save.
     // enter the name of the printer sharing
-    //$connector = new WindowsPrintConnector("");
+    $connector = new WindowsPrintConnector("CT-D150");
 
     //Menggunakan LPT printer
     //check LPT printer dengan masuk terminal lalu ketikan mode LPT1
     //$connector = new WindowsPrintConnector("LPT1");
 
-    $connector = new RawPrintConnector('USB001');
+   
     // Inisialisasi printer
     $printer = new Printer($connector);
 
